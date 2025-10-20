@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/guia4/proyecto/estilos.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar" style="display: none;">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mi Sitio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#cards">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="container my-4 text-center" id="contenido" style="display: none;">
+    <div class="row">
+      <div class="col">
+        <h2>Bienvenido</h2>
+        
+      </div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="row mt-4" id="cards">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Tarjeta 1</h5>
+            <p class="card-text"></p>
+            <button class="btn btn-primary" id="btnInfo1">Ver mensaje</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://picsum.photos/201" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Tarjeta 2</h5>
+            <p class="card-text"></p>
+            <button class="btn btn-success" id="btnModal">ver mensaje</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="container my-5" id="loginContainer">
+    <div class="row justify-content-center">
+      <div class="col-md-4 text-center">
+        <h4>Iniciar sesión</h4>
+        <form id="formLogin" class="p-3 border rounded bg-light">
+          <input type="text" class="form-control mb-2" id="user" placeholder="Usuario">
+          <input type="password" class="form-control mb-2" id="password" placeholder="Contraseña">
+          <button type="submit" class="btn btn-dark w-100">Ingresar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="miModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Mensaje desde JS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="modalBody">Texto inicial.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/guia4/proyecto/script.js"></script>
+</body>
+</html>
